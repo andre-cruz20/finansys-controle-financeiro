@@ -44,3 +44,39 @@ O repositório está sendo preparado para o desenvolvimento da primeira versão 
 7. Execução
 
 As instruções de instalação e execução serão adicionadas após a implementação e os testes da aplicação.
+
+
+Como executar o projeto
+
+Requisitos
+
+- Python 3.10 ou superior
+- Pip para instalação de bibliotecas
+
+Instalação
+
+1. Clone ou baixe este repositório.
+2. Abra o terminal na pasta do projeto.
+3. Instale a dependência com o comando:
+
+pip install -r requirements.txt
+
+Execução
+
+Execute o comando:
+
+python app.py
+
+Depois, abra no navegador o endereço indicado no terminal, normalmente "http://127.0.0.1:5000".
+
+Arquitetura atual
+
+A versão inicial utiliza Python com Flask para receber as requisições e apresentar a interface HTML. As transações são armazenadas em um banco SQLite, criado automaticamente na primeira execução.
+
+O código está concentrado inicialmente no arquivo "app.py", para facilitar a implementação da versão acadêmica inicial. Uma evolução futura poderá separar as rotas, as regras de negócio e o acesso aos dados em módulos independentes.
+
+Limitações da versão inicial
+
+- O sistema ainda precisa ser executado e testado em ambiente local.
+- Não possui autenticação de usuários.
+- O banco de dados é local, adequado para fins didáticos e uso individual.
